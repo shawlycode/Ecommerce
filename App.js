@@ -122,3 +122,25 @@ currentProductColors.forEach((color, index) => {
     currentProductImg.src = chosenProduct.colors[index].img;
   });
 });
+
+currentProductSizes.forEach((size, index) => {
+  size.addEventListener("click", () => {
+    currentProductSizes.forEach((size) => {
+      size.style.backgroundColor = "white";
+      size.style.color = "black";
+    });
+    size.style.backgroundColor = "black";
+    size.style.color = "aqua";
+  });
+});
+
+const buyButton = document.querySelector(".payBtn");
+const close = document.querySelector(".closeBtn");
+const paymentModal = document.querySelector(".payment");
+
+buyButton.addEventListener("click", () => {
+  paymentModal.style.display = "flex";
+});
+close.addEventListener("click", () => {
+  paymentModal.style.display = "none";
+});
