@@ -162,7 +162,6 @@ nav {
   transition: 300ms ease-in-out;
 }
 .features {
- 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -263,8 +262,8 @@ nav {
   width: 400px;
   height: 580px;
   background: rgba(0, 255, 132, 0.181);
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(13, 211, 107, 0.25);
   position: absolute;
   top: 10%;
@@ -344,7 +343,6 @@ label {
   background-color: tomato;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-
   border: none;
   outline: none;
   cursor: pointer;
@@ -412,9 +410,11 @@ cursor: pointer;
   color: aqua;
 }
 .gallery{
-  padding: 3rem;
+  padding:0 3rem;
   display: flex;
   height: 80vh;
+  padding-bottom: 0;
+  
 }
 .galleryItem{
   flex: 1;
@@ -443,4 +443,259 @@ cursor: pointer;
 .galleryItem ,h2{
   text-align: center;
   color: gray;
+}
+.trendingTitle{
+  text-align: center;
+  align-items: center;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.ratio{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img-top{
+ width: 100%;
+ height: fit-content;
+ 
+ 
+}
+.shadow{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.card{
+  width: 100%;
+  height: 450px;
+  cursor: pointer;
+}
+.card-body{
+  align-items: center;
+padding: 1rem;
+ 
+}
+strong{
+  font-size: 20px;
+ 
+}
+.px-md-2{
+  font-size: 18px;
+  color: gray;
+}
+.cardBtn a{
+  text-decoration: none;
+  color: black;
+  width: 100px;
+  height: 30px;
+  background-color: tomato;
+  border-radius: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  text-align: center;
+}
+.cardBtn a:hover{
+  background-color: #000;
+  color: aqua;
+}
+.cardBtn{
+  display: flex;
+  justify-content: space-between;
+}
+.footerContainer{
+  background-color: #000;
+  color: whitesmoke;
+}
+.fl{
+ align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+li{
+  list-style: none;
+ 
+}
+
+.footerItems{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin: 3rem;
+}
+.footer{
+  text-align: center;
+  background-color: #000;
+padding-bottom: 2rem;
+}
+.ftInput{
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  background-color: aqua;
+}
+.ftInput::placeholder{
+  text-align: center;
+  font-size: 18px;
+
+}
+
+
+
+/* media queries */
+@media screen  and (max-width:480px){
+  nav{
+padding: 0.5rem;
+  }
+  .searchInput{
+    display: none;
+  }
+  .navbar-top{
+    display: flex;
+    flex: 1;
+  }
+  .menuItem{
+    margin: 1rem;
+  }
+  .navbar-bottom{
+    flex-wrap: wrap;
+  }
+  .sliderBg{
+   width: 60%;
+   height: 90%;
+ 
+  }
+  .slidderItem{
+    width: 100%;
+    height: 100%;
+  }
+
+  .sliderImg{
+width: 50%;
+  }
+
+.slidderTitle{
+  display: none;
+}
+
+.slidderPrice{
+  top: unset;
+  left: 10px;
+  bottom: 0;
+}
+.buyBtn{
+  bottom: unset;
+  top: 10%;
+  right: 10px;
+  z-index: 100;
+  width: 100px;
+  height: 50px;
+  font-size: 14px;
+  text-align: center;
+  padding: 0.5rem;
+}
+.features{
+  flex-direction: column;
+
+}
+.feature{
+ width: 300px;
+  padding: 1rem;
+  background-color: rgba(54, 117, 117, 0.223);
+}
+.featuredDesc{
+  font-size: 16px;
+}
+
+.featuredTitle{
+  font-weight: 400;
+  font-size: 24;
+}
+.products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productImg{
+  width: 100%;
+}
+.productTitle, .productPrice{
+  font-size: 24px;
+  padding: 0;
+}
+.productDetails {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+text-align: center;
+width: 100%;
+padding: 0;
+position: relative;
+top: 0;
+}
+.gallery{
+  display: none;
+ 
+}
+.trendingTitle{
+  font-size: 20px;
+  margin-top: 8rem;
+}
+.footerContainer{
+  display: flex;
+}
+.footerItems{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.fl li{
+  font-size: 20px;
+  color: gray;
+  
+}
+.footerRights{
+  display: flex;
+  text-align: center;
+}
+.fr{
+  display: flex;
+flex-direction: column;
+}
+.newBtn{
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  margin: 0.5rem;
+  background-color: tomato;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 0.3em;
+  color: #000;
+}
+.payment{
+  width: 45%;
+  height: 100%;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(21, 28, 24, 0.695);
+
+}
+.payInput{
+  width: 200px;
+  
+}
+.cardInfo{
+  display: flex;
+  flex-direction: column;
+  
+}
+.payIn{
+  width: 200px;
+  margin: 0.4rem;
+  color:#000;
+}
 }

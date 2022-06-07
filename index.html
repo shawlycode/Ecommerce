@@ -13,12 +13,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
 
     <title>Nike Shop</title>
   </head>
 
   <body>
-    <nav>
+    <nav id="nav">
       <div class="navbar-top">
         <div class="navItem">
           <img src="./images/sneakers.png" alt="" />
@@ -99,6 +109,7 @@
         </div>
       </div>
     </div>
+
     <div class="features">
       <div class="feature">
         <img src="./images/shipping.png" alt="" class="featuredIcon" />
@@ -133,6 +144,7 @@
         </div>
       </div>
     </div>
+
     <div class="products" id="product">
       <img src="./images/air.png" alt="" class="productImg" />
       <div class="productDetails">
@@ -195,6 +207,7 @@
         <div class="closeBtn">X</div>
       </div>
     </div>
+
     <div class="gallery">
       <div class="galleryItem">
         <h2>Choose Your Lifestyle</h2>
@@ -243,6 +256,156 @@
           class="galleryImg"
         />
         <h2>Go There Be There</h2>
+      </div>
+    </div>
+
+    <h1 class="trendingTitle">TRENDING NOW</h1>
+    <div
+      class="swiffy-slider slider-item-show3 slider-nav-animation slider-nav-autoplay slider-nav-scrollbar-hidden"
+    >
+      <ul class="slider-container py-50" id="slider2">
+        <li>
+          <div class="card shadow h-100">
+            <div class="ratio ratio-1x1">
+              <img
+                src="./images/shoe7.jpeg"
+                class="card-img-top"
+                loading="lazy"
+                alt="..."
+              />
+            </div>
+            <div class="card-body d-flex flex-column flex-md-row">
+              <div class="flex-grow-1">
+                <strong>LeBron 18</strong>
+                <p class="card-text">Basketball Shoes</p>
+              </div>
+              <div class="cardBtn">
+                <div class="px-md-2">$200</div>
+                <a href="#nav">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card shadow h-100">
+            <div class="ratio ratio-1x1">
+              <img
+                src="./images/nike-socks.jpeg"
+                class="card-img-top"
+                loading="lazy"
+                alt="..."
+              />
+            </div>
+            <div class="card-body d-flex flex-column flex-md-row">
+              <div class="flex-grow-1">
+                <strong>Nike Air Vapormax 2021 FK</strong>
+                <p class="card-text">Women's Shoes</p>
+              </div>
+              <div class="cardBtn">
+                <div class="px-md-2">$200</div>
+                <a href="#nav">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card shadow h-100">
+            <div class="ratio ratio-1x1">
+              <img
+                src="./images/shoe-2.jpeg"
+                class="card-img-top"
+                loading="lazy"
+                alt="..."
+              />
+            </div>
+            <div class="card-body d-flex flex-column flex-md-row">
+              <div class="flex-grow-1">
+                <strong>Nike Air Force 1 Fontanka</strong>
+                <p class="card-text">Women's Shoes</p>
+              </div>
+              <div class="cardBtn">
+                <div class="px-md-2">$200</div>
+                <a href="#nav">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card shadow h-100">
+            <div class="ratio ratio-1x1">
+              <img
+                src="./images/shoe-air.jpeg"
+                class="card-img-top"
+                loading="lazy"
+                alt="..."
+              />
+            </div>
+            <div class="card-body d-flex flex-column flex-md-row">
+              <div class="flex-grow-1">
+                <strong>Kyrie 7</strong>
+                <p class="card-text">Basketball Shoes</p>
+              </div>
+              <div class="cardBtn">
+                <div class="px-md-2">$200</div>
+                <a href="#nav">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card shadow h-100">
+            <div class="ratio ratio-1x1">
+              <img
+                src="./images/shoe-air1.png"
+                class="card-img-top"
+                loading="lazy"
+                alt="..."
+              />
+            </div>
+            <div class="card-body d-flex flex-column flex-md-row">
+              <div class="flex-grow-1">
+                <strong>Kyrie 7</strong>
+                <p class="card-text">Big Kids' Basketball Shoes</p>
+              </div>
+              <div class="cardBtn">
+                <div class="px-md-2">$200</div>
+                <a href="#nav">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <button
+        type="button"
+        class="slider-nav slider-nav-autoplay slider-nav-hide"
+      ></button>
+      <button type="button" class="slider-nav"></button>
+    </div>
+    <div class="footerContainer">
+      <div class="footerItems">
+        <div class="fl">
+          <h2>About Us</h2>
+          <ul>
+            <li>Company</li>
+            <li>Contact</li>
+            <li>Careers</li>
+            <li>Stores</li>
+          </ul>
+        </div>
+        <div class="fr">
+          <h3>Subscribed to our News Letter</h3>
+          <input
+            type="email"
+            placeholder="your@email.com"
+            class="ftInput"
+            id=""
+          />
+          <a href="" class="newBtn">Join</a>
+        </div>
+        <div class="footerRights">
+          <h4 class="footer">All Rights Reserved @SneakAffairs 2022</h4>
+        </div>
       </div>
     </div>
     <script src="./App.js"></script>
